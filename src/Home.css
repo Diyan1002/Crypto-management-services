@@ -1,0 +1,627 @@
+.home {
+    background-image: url('./assets/Banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 90px 0 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    color: white;
+    text-align: center;
+    z-index: 1;
+    max-width: 600px;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.content h1 {
+    font-family: Montserrat,sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: white;
+    text-align: left;
+    padding-left: 190px;
+}
+
+.buttons {
+    display: flex;
+    padding-top: 20px;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.btn-get-started, .btn-learn-more {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-get-started {
+    background-color: #2cf312;
+    color: white;
+}
+
+.btn-learn-more {
+    background-color: white;
+    color: black;
+}
+
+.btn-get-started:hover, .btn-learn-more:hover {
+    opacity: 0.9;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for boxes */
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for background */
+  }
+  
+  .box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 230px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px); /* Subtle lift on hover */
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #070707; /* Green color for the stats */
+    margin: 0;
+  }
+  
+  .p2 {
+    margin-top: 10px;
+    color: #555; /* Slightly lighter text */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .plans-section {
+    text-align: center;
+    padding: 50px 0;
+    padding-top: 120px;
+    background-color: rgb(245, 255, 255);
+  }
+  
+  .plans-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .plans-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 20px;
+  }
+  
+  .plan-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .left-box {
+    transform: translateX(-50px); /* Initially move left */
+    margin-left: 90px;
+    border: 3px dashed rgb(94, 94, 253);
+  }
+  
+  .center-box {
+    transform: translateY(50px); /* Initially move down */
+  }
+  
+  .right-box {
+    transform: translateX(50px); /* Initially move right */
+    margin-right: 90px;
+  }
+  
+  .ribbon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #0056b3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .trade {
+    font-size: 28px;
+    color: #36c72e;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .icon1 {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0; /* Add some space around the icon */
+  }
+  .colored-text {
+    color: rgb(44, 34, 138);
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  
+  .deposit-btn {
+    background-color: #36c72e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .deposit-btn:hover {
+    background-color: #28a745;
+  }
+  .why-choose-us-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #2660ac;
+    color: white;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-box {
+    background-color: #518ddb;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  p {
+    font-size: 1em;
+    color: white;
+  }
+  
+  .how-it-works-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #070707;
+    padding-top: 40px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step-box {
+    max-width: 300px;
+    margin: 1rem;
+  }
+  .step-box:hover {
+    transform: scale(1.05); 
+  }
+  .icon5 {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    transition: filter 0.3s; 
+  }
+  .step-box:hover .icon {
+    filter: invert(100%); 
+  }
+  .tr{
+    color: #2660ac;
+  }
+  .pt{
+    color: #555;
+  }
+  .dashed-line {
+    width: 100px; 
+    height: 2px; 
+    border-top: 2px dashed blue;
+    margin: 0 auto; 
+    margin-top: 60px; 
+  }
+  
+  .referral-bonus-section {
+    text-align: center;
+    padding: 50px;
+    padding-left: 50px;
+    background-color: rgb(245, 255, 255);
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 50px;
+  }
+  
+  .bonus-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .bonus-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    background-color: #0044cc;
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .bonus-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bonus-details h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    color: #070707;
+  }
+  
+  .learn-more {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .crypto-plan-section {
+    background-image: url('../public/footer.png'); /* Path to the image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 400px; /* Adjust based on your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .crypto-plan-content {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .crypto-plan-content h1,
+  .crypto-plan-content h2 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2rem; /* Adjust for different screen sizes */
+  }
+  
+  .crypto-plan-content h1 {
+    font-size: 2.5rem; /* Slightly larger for main title */
+  }
+  
+  .footer {
+    background-color: #004899; /* Blue background color */
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .footer-text h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .footer-text p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #6bbf3d; /* Green link color */
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    padding-left: 900px;
+  }
+  
+ /* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+      padding: 30px 15px;
+      align-items: flex-start;
+      margin-top: 30px;
+  }
+
+  .content h1 {
+      font-size: 2rem;
+      padding-right: 160px;    
+  }
+
+  .content p {
+      font-size: 1rem;
+      line-height: 1.4;
+      text-align: left; /* Align paragraph to the left */
+      max-width: 80%;
+      padding-left: 10px;
+  }
+
+  .buttons {
+      flex-direction: row;
+      gap: 15px;
+      padding-left: 10px;
+  }
+
+  .btn-get-started, .btn-learn-more {
+      width: 100%;
+      max-width: 300px;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 250px;
+  }
+
+  .box {
+      flex: 1 1 45%;
+      max-width: 75%;
+  }
+
+  .box h2 {
+      font-size: 1.3rem;
+  }
+
+  .box p {
+      font-size: 0.9rem;
+  }
+
+  .icon {
+      width: 50px;
+      height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .plans-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .plan-box {
+      max-width: 70%;
+  }
+  .left-box {
+    transform: translateX(-50px); /* Initially move left */
+    margin-left: 30px;
+    border: 3px dashed rgb(94, 94, 253);
+  }
+  
+  .center-box {
+    transform: translateY(50px); /* Initially move down */
+    margin-left: 30px;
+  }
+  
+  .right-box {
+    transform: translateX(50px); /* Initially move right */
+    margin-right: -20px;
+  }
+
+  .plans-title {
+      font-size: 2rem;
+  }
+
+  .trade {
+      font-size: 1.3rem;
+  }
+
+  .colored-text {
+      font-size: 1.2rem;
+  }
+
+  .p2 {
+      font-size: 0.9rem;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+      font-size: 2rem;
+  }
+
+  .section-subtitle {
+      font-size: 1rem;
+  }
+
+  /* Stack boxes in a full-width column layout */
+  .bonus-grid {
+      flex-direction: column;
+      align-items: center; /* Center items in the column layout */
+  }
+
+  .bonus-box {
+      max-width: 100%;
+      padding: 15px;
+      margin-bottom: 20px; /* Add some space between boxes */
+  }
+
+  .bonus-details h3 {
+      font-size: 1.2rem;
+  }
+
+  .learn-more {
+      font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .crypto-plan-section {
+      height: 80vh;
+      background-position: top;
+  }
+
+  .crypto-plan-content {
+      padding: 15px;
+  }
+
+  .crypto-plan-content h1 {
+      font-size: 2.2rem;
+  }
+
+  .crypto-plan-content h2 {
+      font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-logo {
+      text-align: center;
+      
+  }
+
+  .footer-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+  }
+}

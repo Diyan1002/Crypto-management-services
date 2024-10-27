@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Change this to your desired font */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Adjust padding as needed */
+    background-color: white; /* Navbar background color */
+    color: white; /* Text color */
+  }
+  
+  .logo h1 {
+    font-size: 28px; /* Adjust logo font size */
+    margin: 0;
+    color: rgb(0, 0, 58);
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    padding-left: 720px;
+  }
+  
+  .nav-links li {
+    margin: 0 15px; /* Spacing between links */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 58); /* Link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12; /* Change this to your desired hover color */
+  }
+  
+  .login-btn {
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    background-color: #2cf312; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  .login-btn:hover {
+    background-color: rgb(1, 138, 19); /* Darker shade on hover */
+  }
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fafafa;
+      gap: 15px;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(-20px);
+      visibility: hidden;
+      z-index: 2;
+  }
+
+  /* Show menu with transition */
+  .nav-links.open {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+  }
+  .nav-links li a{
+    color: rgb(29, 57, 109);
+  }
+  .menu-toggle {
+      display: block;
+      color: #333;
+  }
+
+  .login-btn {
+      margin-top: 10px;
+  }
+
+  .overlay.active {
+      display: block;
+  }
+}
